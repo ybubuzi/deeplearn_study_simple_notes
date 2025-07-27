@@ -12,3 +12,7 @@ x_datas = np.random.uniform(-10086, 10086, 1000).astype(np.float32)
 
 x_mean,x_std = x_datas.mean(), x_datas.std()
 print(x_std)
+
+xxx = np.random.uniform(-10,10,100)
+xs =  xxx.reshape(10,-1)
+print(np.argmax(xs, axis=1))
